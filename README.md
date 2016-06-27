@@ -1,6 +1,7 @@
 # twisted_postgresql_notify
 twisted implementation on postgresql notification
 
+```
 requirements
   twisted
   psycopg2
@@ -13,3 +14,4 @@ begin
 execute 'notify ' || new.name || ',''' || new.id || '|' || new.param || '''';
 return NULL;
 end
+```
